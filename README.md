@@ -19,30 +19,36 @@ use pasadena;
 
 
 
-MYSQL commands 
-mysql -uroot -pYourPassword < pasadena.sql
+MYSQL commands   
+mysql -uroot -pYourPassword < pasadena.sql  
 
 From mysql  
-verify the database/tables/data  are there  
+verify the database/tables/data  are there    
 
-to run the Server 
-npm run devStart  
+to run the Server  
+npm run devStart    
+note that in package.json is the added line  
+"devStart" : "nodemon index.js"  
 
-CLIENT 
-go into client direcotry
-npm install   (uses package.json to install packages)
+CLIENT   
+go into client  directory   
+npm install   (uses package.json to install packages)   
 
-npm start (start React app)
+npm start (start React app)   
 
-to create the React app from scratch  
-npx create-react-app . (in the client directory)  
-install modules  
-npm i bootstrap , mysql ...  
-Copy over the files (replace App.js)  
+to create the React app from scratch   
+npx create-react-app . (in the client directory)     
+install modules    
+npm i bootstrap , mysql ,axios , ...   
+Copy over the files (replace App.js)     
 
-the React App should start up with the UI 
-(there are try... catches so it will at least start up with the express server)
+the React App should start up with the UI   
+(there are try... catches so it will at least start up without the express server)
 
+to create the SERVER side from scratch  
+in the server directory  
+npm init (default answers)   
+npm i express, axios, body-parser, cors, mysql , nodemon  
 
 
 GITHUB commands
