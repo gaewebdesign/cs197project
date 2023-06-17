@@ -2,8 +2,7 @@
 import {React} from 'react'
 
 
-import {Primary} from './Primary.js'
-import {Distance} from './Distance.js'
+
 
 
 
@@ -28,8 +27,8 @@ const Search = () => {
                    </div>
                    </div>
 
-              <Primary/>
-              <Distance/>
+
+
 
 
            </div>
