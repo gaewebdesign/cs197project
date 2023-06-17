@@ -55,6 +55,10 @@ const TestTestBox = () => {
               (response)=>{
                  setDBUsers( response.data )
               }
+      ).catch(
+          (error)  => {
+               alert("ERROR: " + error )
+          }
       )
 
   } 
