@@ -22,7 +22,7 @@ const db = mysql.createConnection(
     host: "localhost",
     user: "root",
     password: "tomato1349",
-    database: "test"
+    database: "pasadena"
 
   }
 )
