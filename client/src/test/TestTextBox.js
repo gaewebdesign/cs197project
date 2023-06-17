@@ -57,7 +57,7 @@ const TestTestBox = () => {
               }
       ).catch(
           (error)  => {
-               alert("ERROR: " + error )
+               alert("ERROR(likely no server): " + error )
           }
       )
 
