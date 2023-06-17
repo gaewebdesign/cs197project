@@ -65,6 +65,10 @@ const ClearButton = (evt) =>{
                 (response)=>{
                    setResourceMenu( response.data )
                 }
+        ).catch(
+         (error)  => {
+            alert("ERROR(retrieving Resource table (no server?): " + error )
+       }
         )
 
     }   
@@ -76,6 +80,10 @@ const ClearButton = (evt) =>{
 
                setCategoryMenu( response.data)
             }
+    ).catch(
+         (error)  => {
+         alert("ERROR(retrieving Category table (no server?): " + error )
+         }
     )
 } 
 
