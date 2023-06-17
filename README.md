@@ -1,44 +1,49 @@
 # cs197project
 CS 197 React Project
 
-to run this React App
-server directory
+React App requires server directory 
+server directory 
 
 note the sql files
-test.sql  contains SQL commands to install tables into the 'test' database
-data.sql  contains SQL commands to install tables and data into the 'cert' database
+pasadena.sql: SQL create pasadena database, create tables and fill with data  
+It's a one line change in server/index.js if you want use another database name 
+Also in the pasadena.sql file you will have to remove the first two lines   
+which specify creates the pasadena database   
+i.e delete these 2 lines  
 
-you can pick your databases (but then need to change some of the code )
-
-MYSQL commands
-mysql -uroot -p
-(enter password at the prompt
-mysql -uroot -pYourPassword
-create database test;
-create database cert;
-
-Import the test.sql , data.sql files 
-mysql -uroot -ptomatoxxxx test < test.sql 
-mysql -uroot -ptomatoxxxx cert < data.sql 
-
-From mysql 
-verify the database/tables are there
-
-run the Server
-npm run devStart
+create database pasadena;  
+use pasadena;   
 
 
-CLIENT
+
+
+
+
+MYSQL commands 
+mysql -uroot -pYourPassword < pasadena.sqk
+
+From mysql  
+verify the database/tables/info are there  
+
+to run the Server 
+npm run devStart  
+
+CLIENT 
 go into client direcotry
 npm install   (uses package.json to install packages)
 
-npx create-react-app  (start React app)
+npm start (start React app)
 
-IF THIS CRASHES
-the express server is not properly set up
-MAYBE: 
-didn't run the express server
-didn't install the two databases/table (test,cert)
+to create the React app from scratch  
+npx create-react-app . (in the client directory)  
+install modules  
+npm i bootstrap , mysql ...  
+Copy over the files (replace App.js)  
+
+the React App should start up with the UI 
+(there are try... catches so it will at least start up with the express server)
+
+
 
 GITHUB commands
 
