@@ -65,8 +65,9 @@ const TestPopUpComponent = () => {
 
   const GetSelections = () => {
 
+        alert("not implemented")
 
-  }
+   }
   // this comes from database
   const url="http://localhost:3001/test/user"
 
