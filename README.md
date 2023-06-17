@@ -20,10 +20,10 @@ use pasadena;
 
 
 MYSQL commands 
-mysql -uroot -pYourPassword < pasadena.sqk
+mysql -uroot -pYourPassword < pasadena.sql
 
 From mysql  
-verify the database/tables/info are there  
+verify the database/tables/data  are there  
 
 to run the Server 
 npm run devStart  
