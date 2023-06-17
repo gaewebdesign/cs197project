@@ -80,6 +80,14 @@ const TestPopUpComponent = () => {
             (response)=>{
                setResourceMenu( response.data )
             }
+              
+
+    ).catch(
+           (error) =>{
+              alert("network error" + error )
+
+           }
+
     )
 
   }  
@@ -90,6 +98,11 @@ const TestPopUpComponent = () => {
             (response)=>{
                setCategoryMenu( response.data )
             }
+    ).catch(
+          (error)=>{
+              alert("network err: " + error  )
+          }
+
     )
 
   } 
