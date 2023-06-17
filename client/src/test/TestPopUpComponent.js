@@ -118,8 +118,10 @@ const TestPopUpComponent = () => {
 )
   return (
         <div>
-
-           <h1>Test PopUP Menu</h1>
+        <h1>Test PopUp Menu</h1>
+        if menus are empty, then likely server isnt running<br/>
+        or the database/tables not found
+        <p/>
 
            <CPopUp name="Resources" id="menu" menu ={ResourceMenu}  func={pullData1}/>
            <CPopUp name="Category" id="menu" menu ={CategoryMenu}  func={pullData2}/>
