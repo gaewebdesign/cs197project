@@ -54,6 +54,12 @@ const TestFormInputComponent = () => {
         <div>
 
            <h1>Test Form Input Component</h1>
+           <br/>
+           <span style={{ color:'blue' ,'fontSize':'12px'}}>
+              Inserts into user table <br/>
+              name,email,password
+           </span>
+
 
            <CFormInput name="Name" id="name" placeholder="name" func={pullData1}/>
            <CFormInput name="Email" id="email" placeholder="email" func={pullData2}/>
