@@ -49,20 +49,21 @@ const NavigationPage = () =>{
                 <li> <Link to="/login"> Login </Link> </li>               
                 <li><Link to="/add"> Add Resource </Link></li>
                 <li><Link to="/emerg"> Add Emergency Incident </Link></li>
-                Above here is not componetized 
-                components)
-                <hr/>
+                Above hardcoded menus(  not componetized )
+
+                 <hr/>
                 Component version <br/>
                 <li><Link to="/cadd"> Add Resource(components) </Link></li>
                 <li><Link to="/search"> Search </Link></li>
 
 
                 <hr/>
-                <b> Below are test routines </b>
-                <li><Link to="/test1"> TestBox </Link></li>
-                <li><Link to="/test2"> Test Options  </Link></li>
+                <b> Below are test routines </b> <br/>
+                <b> e2e: connects to  server </b>
+                <li><Link to="/test1"> TestBox (e2e) </Link></li>
+                <li><Link to="/test2"> Test Options (e2e)  </Link></li>
                 <li><Link to="/test3"> Test Form Component </Link></li>
-                <li><Link to="/test4"> Test PopUp Component </Link></li>
+                <li><Link to="/test4"> Test PopUp Component(e2e) </Link></li>
                 
 
                 <hr/>
